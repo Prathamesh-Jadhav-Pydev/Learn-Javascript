@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6:- Operators in Javascript</title>
+</head>
+<body>
+    <h1>Operators in Javascript</h1>
+    <p>An operand – is what operators are applied to. <br> instance, in the multiplication of 5 * 2 there are two operands: the left operand is 5 and the right operand is 2. Sometimes, <br> people call these “arguments” instead of “operands”.</p>
+    <h4>Operators in Javascript</h4>
+    <ul>
+        <li>1.Unary Operator</li>
+        <li>2.Binary Operator</li>
+        <li>3.Mathematical Operator</li>
+        <li>4.String Concatenation  (+)</li>
+        <li>5.Numeric conversion (+)</li>
+        <li>6.Assignment Operator</li>
+            <ul>
+                <li>A.Modify-in-place</li>
+                <li>B.Chaining assignment</li>
+            </ul>
+        <li>7.Increment and decrement</li>
+        <li>8.Comma operator</li>
+    </ul>
+    <script>
+        //unary operator
+        console.log("1.Unary Operator");
+        let x=10;
+        x=-x
+        console.log(`Unary operator value of x is ${x}`); //unary negation is applied.In short reverse the sign.
+
+        //binary operator
+        let a=20,b=10;
+        console.log("2.Binary Operator");
+        console.log(`Addition is : ${a+b}`);
+        console.log(`Subtraction is : ${a-b}`);
+        console.log(`Multiplication is : ${a*b}`);
+        console.log(`Division is : ${a/b}`);
+
+        /*Maths operation supported
+        1.Addition +,
+        2.Subtraction -,
+        3.Multiplication *,
+        4.Division /,
+        5.Remainder %,
+        6.Exponentation **
+         */
+
+        //Remainder operator
+        let v1=10,v2=4;
+        console.log(`Remainder is :  ${v1%v2}`);
+
+        //Exponentation operator a**b is a to the power b.
+        let y=2,z=3;
+        console.log(`Exponentation of ${y} to the power of ${3} is ${y**z}`);
+
+
+        //string concatenation with binary +
+        let m1="My name is Ram",m2="and I live in Mumbai";
+        console.log(`String concatenation ${m3=m1+" "+m2}`)
+
+        //numeric conversion unary +
+        let b1="10",b2="20";
+        console.log(`No effect on b1 and b2 ${+b1} and ${+b2}`);
+        // if we want use as a number then we use unary conversion
+        console.log(`Sum of b1 and b2 is ${+b1 + +b2}`);
+
+        //Assignment operator (=)
+        let c=2*2+10;
+        console.log(`Result of equation is ${c}`);
+        //Chaining assignment
+        let c1=c2=c3=c4=10*2;
+        console.log(`Chaining assignment c1 value ${c1}`);
+        console.log(`Chaining assignment c2 value ${c2}`);
+        console.log(`Chaining assignment c3 value ${c3}`);
+        console.log(`Chaining assignment c4 value ${c4}`);
+
+        //Modify-in-place
+        let n=2;
+        n=n*2; //n*=2;
+        n=n+2; //n+=2;
+        console.log(`Value of n is ${n}`);
+
+        //Increment and decrement 
+        //Increment 
+        let counter1=10;
+        console.log(`Value before increment is ${counter1}`);
+        counter1++;
+        console.log(`Value after increment is ${counter1}`);
+        //Decrement 
+        let counter2=10;
+        console.log(`Value before increment is ${counter2}`);
+        counter2--;
+        console.log(`Value after increment is ${counter2}`);
+        //prefix counter & postfix counter 
+        let count1=count2=1;
+        let k1=++count1; //prefix counter=value after increment return
+        let k2=count2++; //postfix counter =old value return
+        //prefix counter
+        console.log(`prefix counter value is ${k1}`);
+        //postfix counter
+        console.log(`postfix counter value is ${k2}`);
+        
+        //comma operator -Here, the first expression 1 + 2 is evaluated and its result is thrown away. Then, 5 * 10 is evaluated and returned as the result.
+        let d=(1+2,5*10);
+        console.log(`Comma operator :${d}`);
+    </script>
+</body>
+</html>

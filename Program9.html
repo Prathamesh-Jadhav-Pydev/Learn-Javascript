@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9 :Logical Operator</title>
+</head>
+<body>
+    <h1>Chapter 9 :Logical Operator</h1>
+    <p>
+        <h4>Logical Operator</h4>
+            <ul>
+                <li>1.AND</li>
+                <li>2.OR</li>
+                <li>3.NOT</li>
+                <li>4.Nullish coalescing operator '??'
+                    <p>The nullish coalescing operator is written as two question marks ??.
+
+                        As it treats null and undefined similarly, we’ll use a special term here, in this article. For brevity, we’ll say that a value is “defined” when it’s neither null nor undefined.
+                        
+                        The result of a ?? b is:
+                        
+                            if a is defined, then a,
+                            if a isn’t defined, then b.
+                        
+                        In other words, ?? returns the first argument if it’s not null/undefined. Otherwise, the second one.</p>
+                </li>
+            </ul>
+    </p>
+    <script>
+        //AND logical operator
+        console.log("AND logical operator");
+        console.log(`TRUE && TRUE is => ${true && true}`);
+        console.log(`TRUE && FALSE is => ${true && false} `);
+        console.log(`FALSE && TRUE is => ${false && true}`);
+        console.log(`FALSE && FALSE is => ${false && false}`);
+        console.log("OR logical operator");
+        console.log(`TRUE || TRUE is => ${true || true}`);
+        console.log(`TRUE || FALSE is => ${true || false} `);
+        console.log(`FALSE || TRUE is => ${false || true}`);
+        console.log(`FALSE || FALSE is => ${false || false}`);
+
+        //AND operator program (both is true then it is true)
+        let b1=10,b2=20;
+        if(b1==10 && b2==20)
+        {
+            console.log("b1 and b2 equal");
+        }
+        else
+        {
+            console.log("b1 and are not b2 equal");
+        }
+        //OR operator program (anyone is true then it is true)
+        let h1=10,h2=20;
+        if(h1==10 || h2==20)
+        {
+            console.log("b1 or b2 equal");
+        }
+        else
+        {
+            console.log("b1 or not b2 equal");
+        }
+        //Nullish coalescing operator '??' 
+        let user="Prathamesh",admin;
+        console.log(`If User is assign then user name display..........=> ${user??"No user assign"}`);
+        console.log(`If admin is not assign then....... =>${admin??"No admin is assign"} `);
+    </script>
+</body>
+</html>
