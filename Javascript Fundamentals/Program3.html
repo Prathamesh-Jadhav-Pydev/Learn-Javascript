@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3 :- Data Types in Javascript </title>
+</head>
+<body>
+    <script>
+        // Datatypes in javascript are dynamically typed.
+        let message="Hello";
+        alert(`String before is ${message}`);
+        message=12345;
+        alert(`String after is ${message}`);
+
+        //Number in javascript
+        let num1=123;
+        alert(`Number before is ${num1}`);
+        num1=12.455;
+        alert(`Number after is ${num1}`);
+
+        //String datatypes
+        let string1="Hello",
+        string2="Prathamesh",
+        string3=string1+" "+string2;  //string concatenation
+        alert(string3); //display concatenate string in alert box.
+
+
+        //backticks use for embed variable 
+        let data="India";
+        alert(`I live in ${data}.`);
+
+        //Boolean datatype
+        let a=4>10,
+        b=5>1;
+        alert(a); //result is false.
+        alert(b); //result is true.
+    </script>
+</body>
+</html>
