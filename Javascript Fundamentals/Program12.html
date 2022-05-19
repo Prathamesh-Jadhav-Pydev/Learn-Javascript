@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in Javascript</title>
+</head>
+<body>
+    <h1>Functions in Javascript</h1>
+    <p>function showMessage() <br> {<br>alert( 'Hello everyone!' );<br>}<br></p>
+    <p><strong>Local variables:- </strong> A variable declared inside a function is only visible inside that function.</p>
+    <script>
+        //Functions in Javascript
+        function demo()
+        {
+            console.log("Function executation start");
+        }
+        demo();
+
+        //local variable
+        function local_var_function()
+        {
+            let message="I am a local variable";
+            console.log(message);
+        }
+        local_var_function();
+        //console.log(message); //shows error because message varibale is declared inside function body.
+
+        //outer variable or global variable
+        let name=prompt("Enter Your Name ?","Unknown");
+        function user()
+        {
+            console.log(`Hello ${name} How are You!.. "Outer variable concept"`);
+        }
+        user();
+
+        //parameters in function
+        function add(num1,num2)
+        {
+            console.log(num1+num2);
+        }
+        add(12,10);
+
+        //default values
+        function welcome(user,msg="No message for user")
+        {
+            console.log(`Welcome ${user} and ${msg}`);
+        }
+        welcome("Hari","Live in Thane")
+
+        //returning values
+        
+        function mul(n1,n2)
+        {
+            return n1*n2;
+        }
+        let multi=mul(10,2);
+        console.log(multi);
+    </script>
+</body>
+</html>

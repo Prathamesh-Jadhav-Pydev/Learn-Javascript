@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch statement in Javascript</title>
+</head>
+<body>
+    <h1>The "switch" statement</h1>
+    <p>
+        A switch statement can replace multiple if checks.
+
+It gives a more descriptive way to compare a value with multiple variants.
+    </p>
+    <script>
+        //switch statement
+        console.log("Switch statement");
+        let sub1,sub2,sub3,total,per;
+        sub1=parseInt(prompt("Enter Subject 1 marks.","0"));
+        sub2=parseInt(prompt("Enter Subject 2 marks.","0"));
+        sub3=parseInt(prompt("Enter Subject 3 marks.","0"));
+        total=sub1+sub2+sub3;
+        console.log(`Total marks : ${total}`);
+        per=(total/300)*100;
+        console.log(`Percentage : ${per} %`);
+        switch(true)
+        {
+            case (per>=90):
+                console.log("Outstanding Performance");
+                break;
+            case (per>=80):
+                console.log("Excellent Performance");
+                break;
+            case (per>=70):
+                console.log("Average Performance");
+                break;
+            case (per>=50):
+                console.log(" Low Performance");
+                break;
+            default:
+                console.log("You are Fail..");
+        }
+    </script>
+</body>
+</html>

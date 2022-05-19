@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict mode in Javascript</title>
+</head>
+<body>
+    <h1>Strict mode in Javascript</h1>
+    <p>In strict mode, when a Function Declaration is within a code block, it’s visible everywhere inside that block. But not outside of it.</p>
+    <script>
+        //Strict mode in javscript
+        //'use strict';
+        let age=80;
+        console.log(age);
+        if(age<=18)
+        {
+            function welcome()
+            {
+                console.log("Below 18 age");
+            } 
+            //welcome();  
+        }
+        else
+        {
+            function welcome()
+            {
+                console.log("Above 18+ age");
+            }
+            //welcome(); 
+        }
+       welcome(); 
+
+    </script>
+</body>
+</html>
